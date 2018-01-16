@@ -19,19 +19,14 @@ def get_guess():
     '''get user's guess'''
     while True:
         try:
-            guess = int(input('Guess the secret number? '))
-
+            guess = int(input('Guess the secret number? '))       
         except ValueError:
             print("Not an integer! Try again.")
             continue
         else:
-            return guess
+            return guess 
 
-
-
-    return int(input('Guess the secret number? '))
-
-
+			
 def check_guess(guess, secret):
     '''compare guess and secret, return string describing result of comparison'''
     if guess == secret:

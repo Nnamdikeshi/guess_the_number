@@ -12,6 +12,9 @@ def configure_range():
 
 def generate_secret(low, high):
     '''Generate a secret number for the user to guess'''
+    low = int(input("Choose the lowest number you want to guess from:\n"))
+    high = int(input("Choose the highest number you want to guess to:\n"))
+	
     return random.randint(low, high)
 
 
